@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semester CRUD</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<h1>Semester CRUD</h1>
+
+<div>
+    <h2>Create Semester</h2>
+    <form method="post" action="SemesterController">
+        <label for="semesterName">Semester Name:</label>
+        <input type="text" id="semesterName" name="semesterName"><br>
+        <label for="startingDate">Starting Date:</label>
+        <input type="date" id="startingDate" name="startingDate"><br>
+        <label for="endDate">Ending Date:</label>
+        <input type="date" id="endDate" name="endDate"><br>
+        <input type="submit" value="Save Semester">
+    </form>
+</div>
+
+<div>
+    <h2>Edit Semester</h2>
+    <form action="UpdateSemesterController">
+        <label for="editSemesterId">ID:</label>
+        <input type="text" id="editSemesterId" name="semesterId"><br>
+        <label for="editSemesterName">Semester Name:</label>
+        <input type="text" id="editSemesterName" name="semesterName"><br>
+        <label for="editStartingDate">Starting Date:</label>
+        <input type="date" id="editStartingDate" name="startingDate"><br>
+        <label for="editEndDate">Ending Date:</label>
+        <input type="date" id="editEndDate" name="endDate"><br>
+        <input type="submit" value="Update">
+    </form>
+</div>
+
+<div>
+    <h2>Delete Semester</h2>
+    <form action="DeleteSemesterController">
+        <label for="deleteSemesterId">ID:</label>
+        <input type="text" id="deleteSemesterId" name="semesterId"><br>
+        <input type="submit" value="Delete">
+    </form>
+</div>
+
+</body>
+</html>

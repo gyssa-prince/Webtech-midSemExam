@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Teacher CRUD</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<h1>Teacher CRUD</h1>
+
+<div>
+    <h2>Register Teacher</h2>
+    <form id="createForm" method="post" action="TeacherController">
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" name="firstName"><br>
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" name="lastName"><br>
+        <label for="qualification">Qualification:</label>
+        <select id="qualification" name="qualification">
+            <option value="MASTERS">Masters</option>
+            <option value="PHD">Phd</option>
+            <option value="PROFESSOR">Professor</option>
+        </select><br>
+        <label for="courseId">Course ID:</label>
+        <input type="text" id="courseId" name="courseId"><br>
+        <input type="submit" value="Create">
+    </form>
+</div>
+
+<div>
+    <h2>Edit Teacher</h2>
+    <form action="UpdateTeacherController" >
+        <label for="editTeacherId">Teacher ID:</label>
+        <input type="text" id="editTeacherId" name="teacherId"><br>
+        <label for="editFirstName">First Name:</label>
+        <input type="text" id="editFirstName" name="firstName"><br>
+        <label for="editLastName">Last Name:</label>
+        <input type="text" id="editLastName" name="lastName"><br>
+        <label for="editQualification">Qualification:</label>
+        <select id="editQualification" name="qualification">
+            <option value="MASTERS">Masters</option>
+            <option value="PHD">Phd</option>
+            <option value="PROFESSOR">Professor</option>
+        </select><br>
+        <label for="editCourseId">Course ID:</label>
+        <input type="text" id="editCourseId" name="courseId"><br>
+        <input type="submit" value="Update">
+    </form>
+</div>
+
+<div>
+    <h2>Delete Teacher</h2>
+    <form action="DeleteTeacherController">
+        <label for="deleteTeacherId">Teacher ID:</label>
+        <input type="text" id="deleteTeacherId" name="teacherId"><br>
+        <input type="submit" value="Delete">
+    </form>
+</div>
+
+</body>
+</html>

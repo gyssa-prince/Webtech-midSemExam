@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>STUDENT REGISTRATION CRUD</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<h1>STUDENT REGISTRATION CRUD</h1>
+
+<div>
+    <h2>Student Registration</h2>
+    <form id="createForm" method="post" action="StudentRegistrationController">
+        <label for="studentId">Student ID:</label>
+        <input type="text" id="studentId" name="studentId"><br>
+        <label for="registrationDate">Registration Date:</label>
+        <input type="date" id="registrationDate" name="registrationDate"><br>
+        <label for="departmentId">Department ID:</label>
+        <input type="text" id="departmentId" name="departmentId"><br>
+        <label for="semesterId">Semester ID:</label>
+        <input type="text" id="semesterId" name="semesterId"><br>
+        <input type="submit" value="Save">
+    </form>
+</div>
+
+<div>
+    <h2>Edit Registration</h2>
+    <form action="UpdateStudentRegistrationController" >
+        <label for="editRegistrationId">Registration ID:</label>
+        <input type="text" id="editRegistrationId" name="registrationId"><br>
+        <label for="editStudentId">Student ID:</label>
+        <input type="text" id="editStudentId" name="studentId"><br>
+        <label for="editRegistrationDate">Registration Date:</label>
+        <input type="date" id="editRegistrationDate" name="registrationDate"><br>
+        <label for="editDepartmentId">Department ID:</label>
+        <input type="text" id="editDepartmentId" name="departmentId"><br>
+        <label for="editSemesterId">Semester ID:</label>
+        <input type="text" id="editSemesterId" name="semesterId"><br>
+        <input type="submit" value="Update">
+    </form>
+</div>
+
+<div>
+    <h2>Delete Registration</h2>
+    <form action="DeleteStudentRegistrationController">
+        <label for="deleteRegistrationId">Registration ID:</label>
+        <input type="text" id="deleteRegistrationId" name="registrationId"><br>
+        <input type="submit" value="Delete">
+    </form>
+</div>
+
+</body>
+</html>

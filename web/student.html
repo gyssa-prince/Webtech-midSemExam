@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student CRUD</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<h1>Student CRUD</h1>
+
+<div>
+    <h2>Create Student</h2>
+    <form id="createForm" method="post" action="StudentController">
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" name="firstName"><br>
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" name="lastName"><br>
+        <label for="dateOfBirth">Date of Birth:</label>
+        <input type="date" id="dateOfBirth" name="dateOfBirth"><br>
+        <input type="submit" value="Save Student">
+    </form>
+</div>
+
+<div>
+    <h2>Edit Student</h2>
+    <form action="UpdateStudentController">
+        <label for="editStudentId">ID:</label>
+        <input type="text" id="editStudentId" name="studentId"><br>
+        <label for="editFirstName">First Name:</label>
+        <input type="text" id="editFirstName" name="firstName"><br>
+        <label for="editLastName">Last Name:</label>
+        <input type="text" id="editLastName" name="lastName"><br>
+        <label for="editDateOfBirth">Date of Birth:</label>
+        <input type="date" id="editDateOfBirth" name="dateOfBirth"><br>
+        <input type="submit" value="Update">
+    </form>
+</div>
+
+<div>
+    <h2>Delete Student</h2>
+    <form action="DeleteStudentController">
+        <label for="deleteStudentId">ID:</label>
+        <input type="text" id="deleteStudentId" name="studentId"><br>
+        <input type="submit" value="Delete">
+    </form>
+</div>
+
+</body>
+</html>
